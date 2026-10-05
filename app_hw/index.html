@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f9fc" />
+    <title>Hồ sơ sinh viên</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="profile-screen" aria-label="Hồ sơ sinh viên">
+      <nav class="top-bar" aria-label="Điều hướng hồ sơ">
+        <button class="icon-button" id="back-button" type="button" aria-label="Quay lại">
+          <img src="./assets/arrow-left.svg" alt="" width="16" height="16" />
+        </button>
+        <button
+          class="icon-button"
+          id="edit-button"
+          type="button"
+          aria-label="Chỉnh sửa hồ sơ"
+          aria-pressed="false"
+        >
+          <img src="./assets/edit.svg" alt="" width="16" height="16" />
+        </button>
+      </nav>
+
+      <section class="student-identity" aria-label="Thông tin sinh viên">
+        <img
+          class="student-portrait"
+          src="./assets/student-portrait.svg"
+          alt="Ảnh đại diện sinh viên"
+          width="104"
+          height="104"
+        />
+        <div class="student-details">
+          <h1 id="student-name" contenteditable="false" spellcheck="false">Nguyễn Minh Anh</h1>
+          <p id="student-number" contenteditable="false" spellcheck="false">SV0123456</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
